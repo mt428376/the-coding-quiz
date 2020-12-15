@@ -8,21 +8,21 @@ var questions  = [
             d: "Numbers"
        },  
     },
- { q2: "The condition is an if / else statement is enclosed within___."
-       ans: {   a:"quotes",
+ { q2: "The condition is an if / else statement is enclosed within___.",
+       answer: {   a:"quotes",
               b: " curly brackets" ,
               c: "square brackets" ,
-              d:  "parenthesis "
-            },
-          { q3: "Arrays in Javascript can be used to store__."
+              d:  "parenthesis"
+   },
+             q3: "Arrays in Javascript can be used to store__.",
              ans:  { a: "Numbers and strings",
                      b: "other Arrays ",
                      c: "booleans",
                      d: " All of the above"
                   }
              },
-             {
-               q4:" String values must be enclosed within___when being assigned to variables."
+             
+           { q4:" String values must be enclosed within___when being assigned to variables.",
             
                     ans: { a: "commas",
                            b: " curly brackets",
@@ -30,15 +30,24 @@ var questions  = [
                            d: " parenthesis"
 
 
-                    },
+                    }
 
                 
-             }
+             },
 
-          }
+ {  q5: " A very useful tool used during development and debugging for printing content to the debugger is:",
+        ans: { a:"Javascript", 
+              b: "bash",
+              c:"for loops",
+              d: "console",
+
+        }
+
+},
+          
 
       
-    }
+    
 
 
 
@@ -71,14 +80,28 @@ startBtn.on("click", function(){
     startingquiz()
         // start the timer
         // display q 1
-        function displayquestion1()
-})
+        function displayquestion1() 
 
 
+
+
+
+
+
+
+    ) 
+  
+
+
+
+
+
+
+}
 // function that starts the timer
 
 // function that displays questions to the page
-function startingquiz (){
+function startingquiz(){
     if (questionsAsked.length >= questions.length /* or if there is no time left on the clock*/) {
         // call a function that ends the game 
             // stop the clock
@@ -94,7 +117,8 @@ function startingquiz (){
             const ansBtn = $('button')
             // give the button classes
 var answerbutton = document.createElement("button");
-aunswerbutton.textContent = questions[questionsNum].answer
+answerbutton.textContent = questions[questionsNum].answer
+
 
         })
      
